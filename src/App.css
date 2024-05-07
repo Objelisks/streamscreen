@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -14,21 +13,34 @@
 }
 
 .area {
-  min-width: 300px;
-  min-height: 200px;
   border: 1px solid black;
   display: grid;
 }
 
 .main-screen {
   grid-area: b;
+  min-width: 480px;
+  min-height: 320px;
 }
 
-.scene {
+.scene-settings {
   grid-area: c;
 }
 
-canvas {
-  width: 100%;
-  height: 100%;
+.import {
+  grid-area: f;
+}
+
+.context {
+  grid-area: e;
+}
+
+.import-control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+input[type="file"] {
+  display: none;
 }
